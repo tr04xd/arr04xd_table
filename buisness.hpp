@@ -3,9 +3,9 @@
 
 #include"main.hpp"
 
-int buisness() {
+int business() {
 	system("cls");
-	cout << "BUISNESS";
+	cout << "BUSINESS";
 	return 0;
 }
 

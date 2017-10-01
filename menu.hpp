@@ -9,18 +9,21 @@ USAGE    : to be edit in future...
 #ifndef MENU_H
 #define MENU_H
 
-#include "school.hpp";
+#include "school.hpp"
 
-#define ch_a "\n[1] >>> School Entry";
-#define ch_b "\n[2] >>> Employee Entry";
-#define ch_c "\n[3] >>> Office Entry";
-#define ch_d "\n[4] >>> EXIT";
-#define line "\n+==================================================================+;
-#define error "\nERROR : WRONG INPUT";
+#define ch_a "\n[1] >>> School Entry"
+#define ch_b "\n[2] >>> Employee Entry"
+#define ch_c "\n[3] >>> Office Entry"
+#define ch_d "\n[4] >>> EXIT"
+#define line "\n+==================================================================+"
+#define error "\nERROR : WRONG INPUT"
 using namespace std;
 
 class menu{
     int choice;
+           
+    //What is the purpose of this function???
+    //Please document and improve function name
     int int_function(int user_ch){
         switch(user_ch){
         case 1:

@@ -14,10 +14,8 @@
 
 using namespace std;
 template <typename T>
-inline T const& check(T const& l_lmt, T const& u_lmt, T const& usr_ch) {
-	if ((usr_ch >= l_lmt) && (usr_ch <= u_lmt))
-		return 1;
-	return 0;
+inline bool check(T const& l_lmt, T const& u_lmt, T const& usr_ch) {
+	return usr_ch >= l_lmt && usr_ch <= u_lmt;
 }
 
 //========================================================================================
@@ -35,10 +33,10 @@ inline T const& check(T const& l_lmt, T const& u_lmt, T const& usr_ch) {
 
 #define menu1 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n"
 #define menu2 ":::::::::::::::::''''':::::''''::::':::''''''::'''::::::::::::::::::\n"
-#define menu3 ":::::::::::::::: oYoYo.   .oPYo.   o,   8  8    8 ::::::::::::::::::\n"
-#define menu4 "::::::::::::::: B' B  B   8oooo8   8 4. 8  8    8 ::::::::::::::::::\n"
-#define menu5 "::::::::::::::: B  B  B   8.   ,   8  4.8  8,  ,8 ::::::::::::::::::\n"
-#define menu6 "::::::::::::::: B  B  B   'Yooo    8   'P  'Y88Y'.::::::::::::::::::\n"
+#define menu3 ":::::::::::::::: $$$$$.   .oPYo.   o,   8  8    8 ::::::::::::::::::\n"
+#define menu4 "::::::::::::::: $$ $  B   8oooo8   8 4. 8  8    8 ::::::::::::::::::\n"
+#define menu5 "::::::::::::::: $  $   8.   ,   8  4.8  8,  ,8 ::::::::::::::::::\n"
+#define menu6 "::::::::::::::: $  $  B   'Yooo    8   'P  'Y88Y'.::::::::::::::::::\n"
 #define menu7 "::::::::::::::::..:.. 8 :::....::::.:::..:::....::::::::::::::::::::\n"
 #define menu8 "::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::\n"
 #define menu9 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n"
